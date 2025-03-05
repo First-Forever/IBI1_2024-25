@@ -1,5 +1,7 @@
-This is an example file for reflection in IBI1_2024-25.
+Overall, the practical session was a great opportunity to improve my understanding of Git and version control. 
+Actually, there had been several challenges in the exploration due to lack of mastery of Git and Github.
 
-During this course, I have learnt version control, how to navigate Unix-like systems and how to write simple programs in Python.
-
-I have also learnt to write careful instructions when communicating online!
+Firstly, I learned to initialize the repository and make commits of the revised files. This went quite smoothly. 
+However, in the following steps, like merging and reverting, there existed quite a few strange errors. I tried my best to debug and find the causes. Finally, most of them were solved at last after hard efforts.
+Additionally, without windows to see the file processing status, some basic file disposing methods like moving, renaming and so forth was a bit tricky. But finally I mastered the orders in the lectures and managed to finish the tasks.
+Overall, this practical was very useful in reinforcing Git concepts, and I look forward to improving my workflow in future exercises! 
