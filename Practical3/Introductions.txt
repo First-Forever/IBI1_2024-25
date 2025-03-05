@@ -1,6 +1,7 @@
 Hello, my name is Li Muxuan.
-I like drinking green tea, coffee and eat chocolates.
+I like drinking green tea and eat black chocolates.
 I am enjoying studying IBI1 in person again.
 I am happy that I can push my repo from Visual Studio Code to GitHub.
 Let's enjoy the world of Python!
 The life is short, and we study Python!
+Bravo!
