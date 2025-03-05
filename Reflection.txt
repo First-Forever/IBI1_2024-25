@@ -4,4 +4,4 @@ Actually, there had been several challenges in the exploration due to lack of ma
 Firstly, I learned to initialize the repository and make commits of the revised files. This went quite smoothly. 
 However, in the following steps, like merging and reverting, there existed quite a few strange errors. I tried my best to debug and find the causes. Finally, most of them were solved at last after hard efforts.
 Additionally, without windows to see the file processing status, some basic file disposing methods like moving, renaming and so forth was a bit tricky. But finally I mastered the orders in the lectures and managed to finish the tasks.
-Overall, this practical was very useful in reinforcing Git concepts, and I look forward to improving my workflow in future exercises! 
+Overall, this practical was very useful in reinforcing Git concepts and strengthen the understanding to version control, and I look forward to improving my workflow in future exercises! 
