@@ -16,3 +16,8 @@ elif c == f:
     print("The time for the two transport is the same.")
 else:
     print("Taking bus is quicker.")
+
+X = True
+Y = False
+W = X and Y
+print("W (both X and Y) looks like: {:}".format(W))
