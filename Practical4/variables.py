@@ -1,9 +1,13 @@
+#define the variables of commute time
+#bus taking
 a = 15                  #walk to the bus
 b = 1*60+15             #bus journey
-c = a+b                 #total length of time
+c = a+b                 #total length of time for bus commute
+#driving
 d = 1*60+30             #drive time
 e = 5                   #walk to the car park
-f = d+e                 #total length of time
+f = d+e                 #total length of time for driving commute
+#compare between c with f
 if c > e:
     print("Total time for bus commute is longer.")
 elif c == e:
@@ -21,3 +25,13 @@ X = True
 Y = False
 W = X and Y
 print("W (both X and Y) looks like: {:}".format(W))
+
+'''
+ Truth table for W:
+X     | Y     | W
+------------------------------------------------
+True  | True  | True
+True  | False | False
+False | True  | False
+False | False | False
+'''
