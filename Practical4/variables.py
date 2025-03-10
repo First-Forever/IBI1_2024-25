@@ -1,0 +1,18 @@
+a = 15                  #walk to the bus
+b = 1*60+15             #bus journey
+c = a+b                 #total length of time
+d = 1*60+30             #drive time
+e = 5                   #walk to the car park
+f = d+e                 #total length of time
+if c > e:
+    print("Total time for bus commute is longer.")
+elif c == e:
+    print("The time for the bus commute and walking to the car park is the same.")
+else:
+    print("Time for walking to the car park is longer.")
+if c > f:
+    print("Driving is quicker.")
+elif c == f:
+    print("The time for the two transport is the same.")
+else:
+    print("Taking bus is quicker.")
