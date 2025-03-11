@@ -24,6 +24,8 @@ else:
 X = True
 Y = False
 W = X and Y
+print("X: {:}".format(X))
+print("Y: {:}".format(Y))
 print("W (both X and Y) looks like: {:}".format(W))
 
 '''
