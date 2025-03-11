@@ -1,4 +1,4 @@
-# Contains studying materials for IBI1 2024-25#
+# Contains studying materials for IBI1 2024-25 #
 
 Hello teacher. I am Li Muxuan majoring in Biomedical Informatics.
 
