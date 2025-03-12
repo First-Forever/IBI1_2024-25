@@ -8,12 +8,6 @@ d = 1*60+30             #drive time
 e = 5                   #walk to the car park
 f = d+e                 #total length of time for driving commute
 #compare between c with f
-if c > e:
-    print("Total time for bus commute is longer.")
-elif c == e:
-    print("The time for the bus commute and walking to the car park is the same.")
-else:
-    print("Time for walking to the car park is longer.")
 if c > f:
     print("Driving is quicker.")
 elif c == f:
