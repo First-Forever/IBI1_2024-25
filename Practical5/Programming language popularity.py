@@ -11,6 +11,7 @@ plt.figure(figsize = (10, 10))                                  #I don't know wh
 plt.bar(x = data.keys(), height = data.values())        #I hope that can give the keys and values of the following dictionary
 plt.xlabel('Programming languages')
 plt.ylabel('Percentage of Developers (%)')                      #Draw the label of x and y axis
+plt.title('Bar chart displaying the popoularity of different programming languages')        #Add a title.
 plt.show()                                                      #Show the graph in another window
 
 '''
@@ -21,7 +22,7 @@ Print the dictionary;
 Define the required languages to output;
 Print the percentage of Developers of the required languages;
 Draw the bar plot of the languags and its percentage;
-(need: label of x and y axis, language names, percentage of names)
+(need: label of x and y axis, language names, title and percentage of names)
 Show the plot;
 '''
 
