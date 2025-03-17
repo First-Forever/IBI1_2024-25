@@ -26,3 +26,11 @@ Dry two bar chart of the data above;
 (including: title, their names)
 Show the plot;
 '''
+
+'''
+Authorization:
+Homework: Practical5: Programming language popularity
+Author: Li Muxuan
+Time last edited: 2025.03.17
+All rights reserved.
+'''
