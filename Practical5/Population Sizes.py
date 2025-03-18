@@ -12,6 +12,7 @@ plt.pie(x = uk_countries, labels = uk_countries_names, autopct = '%.2f')        
 plt.axis('equal')
 plt.title("UK countries' population (millions)")                                                           #Draw the pie chart, with labels and title added
 plt.show()                                                                                      #Show the plot
+plt.figure(figsize = (10, 10))
 plt.pie(x = zhejiang_near_provinces, labels = zhejiang_near_provinces_names, autopct = '%.2f')
 plt.axis('equal')
 plt.title("Provinces' population near Zhejiang (millions)")                                                #Draw the pie chart again, with labels and title added
