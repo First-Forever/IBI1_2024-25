@@ -8,13 +8,13 @@ print(f"Sorted UK countries' population: {sorted(uk_countries)}")
 print(f"Sorted Provinces' population near Zhejiang: {sorted(zhejiang_near_provinces)}")         #Print the population values
 
 plt.figure(figsize = (10, 10))                  
-plt.pie(x = uk_countries, labels = uk_countries_names)                                          #I don't know what that means.
+plt.pie(x = uk_countries, labels = uk_countries_names, autopct = '%d')                                          #I don't know what that means.
 plt.axis('equal')
-plt.title("UK countries' population")                                                           #Draw the pie chart, with labels and title added
+plt.title("UK countries' population (millions)")                                                           #Draw the pie chart, with labels and title added
 plt.show()                                                                                      #Show the plot
-plt.pie(x = zhejiang_near_provinces, labels = zhejiang_near_provinces_names)
+plt.pie(x = zhejiang_near_provinces, labels = zhejiang_near_provinces_names, autopct = '%d')
 plt.axis('equal')
-plt.title("Provinces' population near Zhejiang")                                                #Draw the pie chart again, with labels and title added
+plt.title("Provinces' population near Zhejiang (millions)")                                                #Draw the pie chart again, with labels and title added
 plt.show()                                                                                      #Show the plot again
 
 '''
