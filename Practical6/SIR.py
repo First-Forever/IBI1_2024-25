@@ -48,7 +48,7 @@ for i in range(time):
 plt.figure(figsize = (20, 10), dpi = 150)
 plt.plot(np.arange(1, 1001), situation[0, 1:1001], label = 'Infected')
 plt.plot(np.arange(1, 1001), situation[1, 1:1001], label = 'Susceptible')
-plt.plot(np.arange(1, 1001), situation[2, 1:1001], label = 'RecoveredRecovered')
+plt.plot(np.arange(1, 1001), situation[2, 1:1001], label = 'Recovered')
 plt.title(f'SIR Model Display in {time} Days (Infection Rate: {beta}, Recovery Rate: {gamma})')
 plt.xlabel('Time')
 plt.ylabel('Number of People')
