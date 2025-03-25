@@ -41,5 +41,11 @@ for i in range(time):
             infected.discard((x, y))
 plt.imshow(population[0:100, 0:100], cmap = 'viridis', interpolation = 'nearest')
 plt.title('Infection Map')
-plt.legend('upper right')
 plt.show()                                       #Plot the infection map
+'''
+Authorization:
+Homework: Practical6: The efect of vaccination
+Author: Li Muxuan
+Time last edited: 2025.03.25
+All rights reserved.
+'''
