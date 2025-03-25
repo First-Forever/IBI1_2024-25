@@ -8,7 +8,7 @@ N = 10000                            #sum of all population
 infected = 1                        #infected population
 beta = 0.3                          #infection probability
 gamma = 0.05                        #recovery probability
-start_ratio = 0.10
+start_ratio = 0.00
 end_ratio = 1.00
 gradient = 0.10                     #Give the trial interval for different vaccination ratio
 plt.figure(figsize = (20, 10), dpi = 150)
@@ -36,7 +36,7 @@ plt.plot(np.arange(1, 1001), np.zeros(shape = 1000), label = f'{end_ratio:.0%}',
 plt.title(f'SIR Model Display with Different vaccine rate')
 plt.xlabel('Time')
 plt.ylabel('Number of People')
-plt.legend(loc = 'upper right')
+plt.legend(title = 'Vaccinated Rate', loc = 'upper right')
 plt.show()
 '''
 Authorization:

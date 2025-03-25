@@ -8,11 +8,13 @@ gamma = 0.05                        #recovery probability
 population = np.zeros((105, 105))               #make array of all susceptible population
 outbreak = np.random.choice(range(100), size = 2)   #Give an outbreak coordinate
 population[outbreak[0], outbreak[1]] = 1
-plt.figure(figsize = (6, 4), dpi = 150)
 #Record the coordinate of all infected persons, in order to reduce repeating time 
 # (Reason for using set variable: avoid repeat when adding infected coordinates. Otherwise, it will fall into infinity loop.)
 infected = set([(outbreak[0], outbreak[1])])    
 time = 100                          #Repeat time
+nrows = 2
+ncols = int(time/10/2) + 1
+fig, ax = plt.subplots(nrows = nrows, ncols = ncols, figsize = (20, 6))
 #Reminder: Dear teacher, I know that numpy.where() can satisfy the demand, but the time complexity will be a lot higher for system to find the infected coordinate.
 #In this case, I will record all the infected persons' coordinates to avoid that.
 '''
@@ -26,7 +28,7 @@ Repeat:
         Give a random number with probability gamma to recover;
 Plot the map;
 '''
-for i in range(time):
+for i in range(time+1):
     now_infected = list(infected.copy())        #Give a copy of infected persons
     for x, y in now_infected:
         step_infected = np.random.choice(a = 2, size = 9, p = [1 - beta, beta]).reshape((3, 3))     #Generate a group of ramdom numbers that are infected (reshape into (3, 3) so as to match with original map)
@@ -39,8 +41,15 @@ for i in range(time):
         if np.random.choice(a = 2, p = [1 - gamma, gamma]):     #Generate a random number for recovery for the given infected individual, and if recovered, move it out of the set
             population[x, y] = 2
             infected.discard((x, y))
-plt.imshow(population[0:100, 0:100], cmap = 'viridis', interpolation = 'nearest')
-plt.title('Infection Map')
+    if(i % 10 == 0):
+        figrow = int(i/10)// ncols
+        figcol = int(i/10)%ncols
+        ax[figrow, figcol].imshow(population[0:101, 0:101], cmap = 'viridis', interpolation = 'nearest')
+        ax[figrow, figcol].set_title(f'Time {i}')
+        #ax[figrow, figcol].axis('off')
+if time // 10 % 2 == 0:
+    ax[nrows-1, ncols-1].set_visible(False)
+plt.suptitle('Infection Map')
 plt.show()                                       #Plot the infection map
 '''
 Authorization:
