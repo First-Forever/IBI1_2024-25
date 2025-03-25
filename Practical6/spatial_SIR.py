@@ -53,7 +53,7 @@ plt.suptitle('Infection Map')
 plt.show()                                       #Plot the infection map
 '''
 Authorization:
-Homework: Practical6: The efect of vaccination
+Homework: Practical6: Looking at disease spread in 2D
 Author: Li Muxuan
 Time last edited: 2025.03.25
 All rights reserved.
