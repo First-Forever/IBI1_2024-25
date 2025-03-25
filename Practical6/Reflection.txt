@@ -1,0 +1,5 @@
+This is a little bit harder practical.
+The number of arrays required increases a lot this time, pushing me to comprehensively manage every of them. Not only should I store different categories of population, but also the date need to be updated every loop.
+In addition, this time more functions is needed to plot the graphs. I spent a lot of efforts to figure out how every function performs.
+Among all difficulties, the hardest is dubugging. Many details should be noticed when programming. The first time I programmed, I missed a lot of them, like how to update the population every day in the SIR simulation, where I made negative numbers in the loops and raised errors. Also, when giving spatial_SIR, a very significant part is how to manage the range of the figure. If the infected individual is on the edge of figure, updating its neighbours is a tricky problem. We should give special judge on them.
+From this practical, I remembered a lot of things. Next time I should pay attention to how data are updated in order to reduce erros. Also, it is a must to notice special situations otherwise erros may exist when the program runs to them. 
