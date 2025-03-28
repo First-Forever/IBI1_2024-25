@@ -40,8 +40,8 @@ plt.suptitle('Infection Map')
 plt.show()                                       #Plot the infection map
 '''
 Authorization:
-Homework: Practical6: Looking at disease spread in 2D
+Homework: Practical6: Looking at disease spread in 3D
 Author: Li Muxuan
-Time last edited: 2025.03.25
+Time last edited: 2025.03.27
 All rights reserved.
 '''
