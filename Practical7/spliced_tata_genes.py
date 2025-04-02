@@ -3,6 +3,7 @@ import re
 import sys
 
 input_seq = input("Input the splice that you want to count: ")      #Input the sequence to check
+box = r'TATA[AT]A[AT]'                                              #Box sequence
 if input_seq not in ('GTAG', 'GCAG', 'ATAC'):                       #Judge if it is valid; if not, stop the program
     print('Sequence not valid!')
     sys.exit()
@@ -17,5 +18,7 @@ for gene in genes:
     elif gene[0] != '>' and gene:                                           
         now_gene_seq = gene                                         #Find the sequences
         if re.search(exam_seq, now_gene_seq):                      #Judge if it contains required gene sequence
+            now_gene_name = re.sub('\n', '', now_gene_name)
+            now_gene_name += f'_count: {len(re.findall(box, now_gene_seq))}\n' #Count the number of TATA boxes in the sequence
             write_file.write(now_gene_name + now_gene_seq)          #If valid, write in a file
 write_file.close()
