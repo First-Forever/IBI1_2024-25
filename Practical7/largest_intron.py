@@ -2,16 +2,6 @@
 import re
 
 ans = []
-def max_search(pattern, string, start):
-    if start >= len(string):
-        return
-    now_string = string[start:]
-    match = re.search(pattern = pattern, string = now_string)
-    if match:
-        ans.append(match.group())
-        max_search(pattern, string, match.end())
-    else:
-        return
 seq = 'ATGCAAGTGGTGTGTCTGTTCTGAGAGGGCCTAA'
 introns = re.findall(r'(GT.*AG)', seq)          #Find sequences of the introns
 mmax = len(introns[0])       
