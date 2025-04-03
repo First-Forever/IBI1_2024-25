@@ -25,12 +25,9 @@ while i < line:                                                     #Extract all
             seq += genes[i]
             i += 1
         now_gene_seq = seq
-        now_gene_seq = re.sub('\n', '', now_gene_seq)
-        splice_seq_list = re.findall(exam_seq, now_gene_seq)
-        for splice_seq in splice_seq_list:
-            if re.search(box, splice_seq):           #Judge if it contains required gene sequence
-                now_gene_name += f'_count: {len(re.findall(box, now_gene_seq))}\n' #Count the number of TATA boxes in the sequence
-                write_file.write('>' + now_gene_name + now_gene_seq + '\n')          #If valid, write in a file
-                break
+        now_gene_seq = re.sub('\n', '', now_gene_seq)                 
+        if re.search(box, now_gene_seq) and re.search(exam_seq, now_gene_seq):           #Judge if it contains required gene sequence
+            now_gene_name += f'_count: {len(re.findall(box, now_gene_seq))}\n' #Count the number of TATA boxes in the sequence
+            write_file.write('>' + now_gene_name + now_gene_seq + '\n')          #If valid, write in a file
 read_file.close()
 write_file.close()
