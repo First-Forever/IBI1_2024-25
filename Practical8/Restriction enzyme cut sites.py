@@ -1,5 +1,6 @@
 import sys                 #Import necessary libraries
 
+canonical_seq = ('A', 'G', 'C', 'T')
 def sequence_check(seq, restrict):                                          #Check if the sequences are valid
     for i in seq:
         if i not in canonical_seq:
@@ -18,9 +19,9 @@ def find_cut_site(seq, restrict):                                           #Fin
             ans.append(i)                                                   #If restriction enzyme sequence is found, add the index to the answer list
     return ans
 
-seq = input("Give the DNA sequence to be cut: ")
+#Now we give an example to show how to use the function 
+seq = 'AGCTTTAGCTGGAGCTT'
 len_seq = len(seq)
-restrict = input("Give the sequence recognized by the restriction enzyme: ")            #Input the required sequences
-canonical_seq = ('A', 'G', 'C', 'T')
+restrict = 'AGCT'            
 sequence_check(seq = seq, restrict = restrict)                                          #Check sequences' validity
 print(f'Cutting site of the given restriction enzyme is: {find_cut_site(seq, restrict)}')   #Output the results

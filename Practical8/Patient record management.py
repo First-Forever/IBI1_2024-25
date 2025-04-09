@@ -7,3 +7,7 @@ class patients:                                                 #Define the clas
     
     def getinfo(self):                                          #Define the method to give values of the object
         print(f"Patient's name: {self.name}, patient's age: {self.age}, date of latest admission: {self.date}, medical history: {self.history}")
+
+#Now we give an example to show how to use the class
+patient = patients('Alex Lee', 20, '2025-04-01', 'Trouble in urine')
+patient.getinfo()

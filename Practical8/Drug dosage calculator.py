@@ -9,8 +9,9 @@ def dosage_calculate(weight, strength, dose):                                   
         sys.exit()
     return weight * dose / strength * 5
 
-weight = int(input("Please enter the individual's weight in (kg): "))
-strength = int(input("Please enter the strength of paracetamol in (mg/5ml): "))     #Input the weight and strength values
+#Now we give an example to show how to use the function 
+weight = 80
+strength = 120
 dose = 15                                                                           #Define the dose of drug (in mg/kg)
 person_dosage = dosage_calculate(weight = weight, strength = strength, dose = dose) #Calculate the dosage for the given individual
 print(f"The volumn of the drug is {person_dosage:.2f} ml.")                         #Print the result
