@@ -9,7 +9,7 @@ delys_data = pd.read_csv('dalys-rate-from-all-causes.csv')
 
 #Show the third column (the year) for the first 10 rows (inclusive)
 print("The third column (the year) for the first 10 rows:")            
-print(delys_data.loc[:10,'Year'])
+print(delys_data.loc[:9,'Year'])
 
 #Shown the 10th year
 print("\nThe 10th year with DALYs data recorded in Afghanistan:")
