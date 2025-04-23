@@ -16,8 +16,8 @@ print(f"\nThe 10th year with DALYs data recorded in Afghanistan: {dalys_data[dal
 
 #The DALYs for countries in 1990:
 print('\nDALYs for all countries in 1990:')
-series_select = (dalys_data['year'] == 1990)
-print(dalys_data[dalys_data['Year'] == 1990])
+series_select = (dalys_data['Year'] == 1990)
+print(dalys_data[series_select])
 
 #Show the mean value of DALYs in the UK and France
 UK_mean_DALY = dalys_data[dalys_data["Entity"] == 'United Kingdom']['DALYs'].mean()
