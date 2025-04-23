@@ -1,1 +1,17 @@
-What are the countries that have less than 20000 DALYs in a certain year?
+Question: Which entities had a total DALYs value below 20,000 in any single year, and what were the corresponding years and DALYs values?
+Question line: 43
+The entities that had a total DALYs value below 20,000 (with the year and DALYs values): 
+           Entity  Year     DALYs
+164       Andorra  2004  19986.44
+165       Andorra  2005  19900.29
+166       Andorra  2006  19820.48
+167       Andorra  2007  19715.22
+168       Andorra  2008  19579.23
+...           ...   ...       ...
+5819  Switzerland  2019  17635.03
+5875       Taiwan  2015  19891.75
+5877       Taiwan  2017  19936.04
+5878       Taiwan  2018  19899.19
+5879       Taiwan  2019  19702.97
+
+[294 rows x 3 columns]
