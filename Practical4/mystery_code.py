@@ -1,6 +1,5 @@
 # What does this piece of code do?
 # Answer:  Counting the total number of attempts required to generate two identical random integers ranging from 1 to 6 
-# (6 is exclusive, which is expressed as [1, 6) in methematical form) after several loops.
 
 # Import libraries
 # randint allows drawing a random number,
