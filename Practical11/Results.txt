@@ -3,9 +3,8 @@ Subcellular localization of SOD2: Mitochondria matrix
 Range of percentage identities: 86%-99.5%
 Alignment score and percentage of identical amino acids:
 Random&Human:
-Score = -230.0, Identity = 6.22%
+Score = -218.0, Identity = 4.95%
 Random&Mouse:
-Score = -238.0, Identity = 5.33%
+Score = -226.0, Identity = 4.05%
 Human&Mouse:
-Score = 1081.0, Identity = 90.27%
-Most closely related: Human & Mouse
+Score = 1097.0, Identity = 90.09%
