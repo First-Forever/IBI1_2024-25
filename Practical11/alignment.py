@@ -1,21 +1,11 @@
 #import necessary libraries
 from Bio.Align import substitution_matrices
+from Bio import SeqIO
 
 #Load Fasta files
-random_file = open('random.fasta')
-human_file = open('P04179.fasta')
-mouse_file = open('P09671.fasta')
-
-def skip_1row(file):
-    seq = ""
-    rows = file.readlines()
-    for row in rows[1:]:
-        seq += row
-    return seq
-
-random = skip_1row(random_file)
-human = skip_1row(human_file)
-mouse = skip_1row(mouse_file)
+human = str(SeqIO.read("P04179.fasta", "fasta").seq)
+mouse = str(SeqIO.read("P09671.fasta", "fasta").seq)
+random = str(SeqIO.read("random.fasta", "fasta").seq)
 
 blosum62 = substitution_matrices.load("BLOSUM62")
 
