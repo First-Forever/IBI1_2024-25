@@ -1,6 +1,6 @@
 Length of human SOD2: 222
 Subcellular localization of SOD2: Mitochondria matrix
-Range of percentage identities: 86%-99.5%
+Range of percentage identities: 83.3%-99.5%
 Alignment score and percentage of identical amino acids:
 Random&Human:
 Score = -218.0, Identity = 4.95%
