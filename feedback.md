@@ -1,0 +1,1 @@
+In the mystery code for Practical 4, I mistakenly used the **range of the random.randint** function incorrectly. I thought it did not include the upper bound, but in fact, it does. I have revised my answer.
