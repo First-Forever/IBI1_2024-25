@@ -110,3 +110,5 @@ for namespace, info in handler.mmax.items():
 end_time = datetime.datetime.now()
 duration = (end_time - start_time).total_seconds()
 print(f"Time for SAX: {duration} seconds")
+
+#SAX is faster than DOM
