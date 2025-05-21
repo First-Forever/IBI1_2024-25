@@ -52,6 +52,7 @@ class GOHandler(xml.sax.ContentHandler):
         self.name = ''
         self.namespace = ''
         self.cnt = 0                    #Count of <is_a> tag
+        #Initialize a mmax dictionary to store the results (Note: value of 'feature' is a **list** to store multiple answers)
         self.mmax = {'molecular_function': {'count': 0, 'feature': []},
                 'biological_process': {'count': 0, 'feature': []},
                 'cellular_component': {'count': 0, 'feature': []}
@@ -84,7 +85,7 @@ class GOHandler(xml.sax.ContentHandler):
             self.cnt += 1
     
     def characters(self, content):
-        if self.current_data == 'id':
+        if self.current_data == 'id':           #Store the information of a certain line
             self.id += content
         elif self.current_data == 'name':
             self.name += content
