@@ -12,7 +12,7 @@ print("The third column (the year) for the first 10 rows:")
 print(dalys_data.loc[:9,'Year']) 
 
 #Shown the 10th year
-print(f"\nThe 10th year with DALYs data recorded in Afghanistan: {dalys_data[dalys_data['Entity'] == 'Afghanistan'].at[9, 'DALYs']}")
+print(f"\nThe 10th year with DALYs data recorded in Afghanistan: {dalys_data[dalys_data['Entity'] == 'Afghanistan'].at[9, 'Year']}")
 
 #The DALYs for countries in 1990:
 print('\nDALYs for all countries in 1990:')
