@@ -4,7 +4,6 @@
 
 **Range of percentage identities**: 
 - **Human & Eutheria (placentals)**: 58.1%-100%
-- **Human & Mouse**: 83.2%-100%
   
 **Alignment score and percentage of identical amino acids**:
 - **Random & Human**: Score = -218.0, Identity = 4.95%
